@@ -3,4 +3,28 @@ extends ./layouts/index
 block contenido
     main.container.mt-5 
         .row 
-            h1= pagina
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="Sobre Nosotros", class="img-fluid")
+            .col-md-7
+                h1= pagina
+                blockquote ¡Bienvenido a nuestra agencia de tours! Somos un equipo apasionado de viajeros empedernidos que busca brindarte experiencias inolvidables. Nuestra misión es llevarte a descubrir los rincones más fascinantes del mundo, mostrándote la belleza de diferentes culturas, paisajes y tradiciones. Ya sea que prefieras destinos exóticos, aventuras en la naturaleza o visitas a ciudades icónicas, estamos aquí para hacer realidad tus sueños de viaje.
+                p Con años de experiencia en la industria del turismo, hemos construido una reputación sólida basada en la excelencia en el servicio al cliente y la calidad en nuestros itinerarios. Nuestros guías turísticos expertos te acompañarán en cada paso del camino, asegurándose de que tu viaje sea seguro, cómodo y lleno de momentos memorables. Nos enorgullecemos de ofrecer opciones de viaje personalizadas y flexibles para adaptarnos a tus preferencias y necesidades. Así que déjanos llevar tus sueños de viaje a la realidad, y descubre el mundo con nosotros. ¡Te garantizamos una experiencia inolvidable!
+
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row    
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Pellentesque volutpat, turpis at euismod finibus, augue odio ornare risus, sed fermentum neque arcu et justo. Fusce molestie pharetra elit, in vestibulum ligula sagittis nec.
+
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos
+                    p Pellentesque volutpat, turpis at euismod finibus, augue odio ornare risus, sed fermentum neque arcu et justo. Fusce molestie pharetra elit, in vestibulum ligula sagittis nec.
+
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4")
+                    h2.mb-4 Los Mejores Precios
+                    p Pellentesque volutpat, turpis at euismod finibus, augue odio ornare risus, sed fermentum neque arcu et justo. Fusce molestie pharetra elit, in vestibulum ligula sagittis nec.
+                    
