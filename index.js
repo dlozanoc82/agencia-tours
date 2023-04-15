@@ -12,6 +12,9 @@ app.set('view engine', 'pug');
 //Agregar Router
 app.use('/', router);
 
+//Definir la carpeta publica
+app.use(express.static('public'));
+
 app.listen(port, () => {
     console.log(`El servidor esta funcinando en el puerto ${port}`)
 });
