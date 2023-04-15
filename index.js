@@ -13,6 +13,7 @@ app.set('view engine', 'pug');
 app.use((req, res, next) => {
     const year = new Date();
     res.locals.nowYear = year.getFullYear();
+    res.locals.nombreSitio = "Agencia de Tours";
     return next();
 });
 
