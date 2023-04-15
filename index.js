@@ -1,23 +1,16 @@
 import express from "express";
+import router from "./routes/index.js";
 
 const app = express();
 
 //Definir Puerto
 const port = process.env.PORT || 4000;
 
-//req-lo que enviamos 
-//res- lo que express nos responde
-app.get('/', (req, res) =>{
-    res.send('Inicio');
-});
+//Habilitar Pug
+app.set('view engine', 'pug');
 
-app.get('/nosotros', (req, res) =>{
-    res.send('Nosotros');
-});
-
-app.get('/contacto', (req, res) =>{
-    res.send('Contacto');
-});
+//Agregar Router
+app.use('/', router);
 
 app.listen(port, () => {
     console.log(`El servidor esta funcinando en el puerto ${port}`)
