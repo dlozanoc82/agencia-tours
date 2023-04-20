@@ -45,10 +45,11 @@ const paginaDetalleViaje = async (req, res) => {
     }
 }
 
+
 export{
     paginaInicio,
     paginaNosotros,
     paginaViajes,
     paginaTestimoniales,
-    paginaDetalleViaje
+    paginaDetalleViaje, 
 }

@@ -23,6 +23,9 @@ app.use((req, res, next) => {
     return next();
 });
 
+//Agregar body parser para leer los datos del formulario
+app.use(express.urlencoded({extended: true}));
+
 //Agregar Router
 app.use('/', router);
 

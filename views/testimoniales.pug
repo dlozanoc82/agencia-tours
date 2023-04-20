@@ -6,9 +6,9 @@ block contenido
         .row
             h2.d-block.w-100.text-center Agrega un Testimonial
 
-            .row.justify-content-center.col
+            .row.col.justify-content-center
                 .col-md-8 
-                    form(action="" method="POST")
+                    form(action="/testimoniales" method="POST")
                         .form-group 
                             label(for="nombre") Nombre 
                             input#nombre(type="text", placeholder="Tu nombre", name="nombre", class="input form-control")
