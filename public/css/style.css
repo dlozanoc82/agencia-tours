@@ -33,6 +33,19 @@ h3 {
     font-size: 4.8rem;
 }
 
+label {
+    font-size: 1.6rem;
+}
+
+.input {
+    font-size: 1.4rem;
+    padding: 2rem 1rem;
+}
+
+.area {
+    font-size: 1.4rem;
+}
+
 .btn-success {
     background-color: #DC135F;
     border-color: #DC135F;
