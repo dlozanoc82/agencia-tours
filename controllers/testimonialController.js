@@ -36,7 +36,7 @@ const guardarTestimonial = async (req, res) => {
             })
             res.redirect('/testimoniales')
         } catch (error) {
-            
+            console.log(error);
         }
     } 
 
