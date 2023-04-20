@@ -5,15 +5,15 @@ const guardarTestimonial = (req, res) => {
     const errores = [];
 
     if (nombre.trim() === '') {
-        console.log('El nombr esta vacio')
+        errores.push({mensaje: 'El nombre esta vacio'})
     }
 
     if (correo.trim() === '') {
-        console.log('El nombr esta vacio')
+        errores.push({mensaje: 'El correo esta vacio'})
     }
     
     if (mensaje.trim() === '') {
-        console.log('El nombr esta vacio')
+        errores.push({mensaje: 'El mensaje esta vacio'})
     }
 
 }
