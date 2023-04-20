@@ -7,7 +7,10 @@ const paginaInicio = async(req, res) =>{
     //Consultar tres viajes del modelo
     try {
         const viajes = await Viaje.findAll({limit: 3});
-        const testimoniales = await Testimonial.findAll({limit: 3});
+        const testimoniales = await Testimonial.findAll({
+            order: [['id', 'DESC']],
+            limit: 3
+        });
 
         res.render('inicio', {
             pagina: 'Inicio',
@@ -39,7 +42,10 @@ const paginaViajes = async (req, res) =>{
 
 const paginaTestimoniales = async (req, res) =>{
     try {
-        const testimoniales = await Testimonial.findAll();
+        const testimoniales = await Testimonial.findAll({
+            order: [['id', 'DESC']],
+            limit: 3
+        });
         res.render('testimoniales',{
             pagina: 'Testimoniales',
             testimoniales
